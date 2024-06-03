@@ -21,18 +21,38 @@ public class TestotomasyonuPage {
     public WebElement aramakutusu;
 
     @FindBy (xpath ="//*[text()='4 Products Found']" )
-    public WebElement bulunanUrunSayisi;
+    public WebElement bulunanUrunSayisiText;
 
     @FindBy (className = "prod-img")
     public List<WebElement> bulunanUrunlerList;
 
 
+@FindBy(xpath = "(//*[@class='cart-bar'])[1]")
+    public WebElement accountLink;
+
+@FindBy (id = "email")
+public WebElement loginEmail;
+
+@FindBy (id = "password")
+    public WebElement loginPassword;
 
 
+@FindBy(id = "submitlogin")
+    public WebElement signInButonu;
 
+ @FindBy (xpath = "(//*[@class='item'])[6]")
+    public  WebElement logoutButonu;
 
+@FindBy(xpath = "//*[@class=' heading-sm mb-4']")
+public WebElement ilkUrunText;
 
+@FindBy(xpath = "//*[@class='add-to-cart']")
+    public WebElement addToCart;
 
+@FindBy(xpath = "(//*[@class='menu-icon-text'])[3]")
+    public WebElement yourCart;
 
+@FindBy (xpath = "//*[@class='product-title text-center']")
+    public WebElement sepettekiUrunText;
 
 }

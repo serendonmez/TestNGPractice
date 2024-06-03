@@ -29,7 +29,7 @@ public class C02_PageClassKullanimi {
         // arama sonucunda urun bulunabildigini test edin
 
         String unExpectedBulunanUrun= "0 Products Found";
-        String actualBulunanUrun= testotomasyonuPage.bulunanUrunSayisi.getText();
+        String actualBulunanUrun= testotomasyonuPage.bulunanUrunSayisiText.getText();
         Assert.assertNotEquals(actualBulunanUrun,unExpectedBulunanUrun);
 
         // sayfayi kapatin

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- day 1 ve day3 teki classlari toplu calistir
+-->
+<suite name="istenen packagelari calistir">
+    <test name="B1">
+        <packages>
+
+            <package name="tests.day01_TestNGFramework">
+
+
+            </package>
+            <package name="tests.day03_TestDatasiKullanimi"></package>
+
+        </packages>
+    </test>
+</suite>

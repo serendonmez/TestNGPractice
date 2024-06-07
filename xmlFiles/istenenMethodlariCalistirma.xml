@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+day 1 C02 classindaki Wise testini
+day3 C02 nin gecersizPasswordEmail haric diger methodlari calistir.
+
+
+        -->
+<suite name="istenen Methodlari Claistirma">
+    <test name="C1">
+       <classes>
+           <class name="tests.day01_TestNGFramework.C02_Priority">
+               <methods>
+                   <include name="wisetesti">
+
+                   </include>
+               </methods>
+           </class>
+            <class name="tests.day03_TestDatasiKullanimi.C02_NegativeLoginTest">
+                <methods>
+                    <exclude name="gecersizEmailPasswordTest"></exclude>
+                </methods>
+            </class>
+       </classes>
+
+    </test>
+</suite>

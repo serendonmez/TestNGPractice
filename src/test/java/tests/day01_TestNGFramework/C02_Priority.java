@@ -75,7 +75,7 @@ public class C02_Priority {
         Assert.assertTrue(actualURLTest.contains(expectedURL));
     }
 
-    @Test (priority = 3)
+    @Test (priority = 3,groups = "smoke") // smoke test grubuna ekledik .
     public  void bestBuyTesti(){
 
 

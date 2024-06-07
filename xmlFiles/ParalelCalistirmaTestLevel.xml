@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="paralel calistirma Test Level">
+    
+    <test name="paralel Test 1. Browser ">
+        
+        <packages>  <package name="tests.day03_TestDatasiKullanimi"></package>
+        </packages>
+    </test>
+    
+    <test name="paralel Test 2. Browser">
+        
+        <packages>
+            <package name="tests.day04_softAssertion_XmlDosyalar"></package>
+        </packages>
+    </test>
+    
+    
+</suite>

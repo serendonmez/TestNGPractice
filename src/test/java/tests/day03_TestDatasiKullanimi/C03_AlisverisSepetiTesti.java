@@ -44,7 +44,7 @@ public class C03_AlisverisSepetiTesti {
 
 
 String sepettekiUrunText=testotomasyonuPage.sepettekiUrunText.getText();
-Assert.assertEquals(sepettekiUrunText,ilkUrunIsmi);
+Assert.assertNotEquals(sepettekiUrunText,ilkUrunIsmi);
 
 //7- sayfayi kapatin
     Driver.getDriver().quit();

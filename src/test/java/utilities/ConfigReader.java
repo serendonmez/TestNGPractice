@@ -10,7 +10,7 @@ public class ConfigReader {
 
    static Properties properties;
 
-   static { // damit before die class läuft,
+   static { // damit vor den Methoden läuft,
 
             String filePath="configuration.properties";
 

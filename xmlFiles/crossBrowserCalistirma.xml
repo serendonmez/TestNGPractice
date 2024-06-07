@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- day07 package indaki testclasslarini hem chrome hem de firefox ile cross browser yoluyla
+calistir.
+ -->
+<suite name="istenen classlari cross Browser ile Calistirma">
+    <test name="Chrome ile calistirma ">
+        <parameter name="kullanilacakBrowser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.day07_CrossBrowserTesting.C01_AramaTesti"></class>
+            <class name="tests.day07_CrossBrowserTesting.C02_PozitifLoginTesti"></class>
+        </classes>
+    </test>
+
+    <test name="Firefox ile calistirma">
+        <parameter name="kullanilacakBrowser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.day07_CrossBrowserTesting.C01_AramaTesti"></class>
+            <class name="tests.day07_CrossBrowserTesting.C02_PozitifLoginTesti"></class>
+        </classes>
+    </test>
+
+
+</suite>

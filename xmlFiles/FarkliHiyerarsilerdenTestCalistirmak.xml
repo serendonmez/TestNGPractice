@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Day4 package inin tamamini
+  day 03 ten C01 classini
+  Day01  C02 nin gecersizPasswordEmail testMethodunu 
+    
+-->
+<suite name="Farkli Hiyerarsilerden Test Calistirma">
+
+    <test name="D1">
+
+        <packages>
+            
+            <package name="tests.day04_softAssertion_XmlDosyalar"></package>
+
+        </packages>
+
+        <classes>
+            <class name="tests.day03_TestDatasiKullanimi.C01_PozitifLoginTesti"></class>
+
+             <class name="tests.day01_TestNGFramework.C02_Priority">
+                 <methods>
+                     <include name="bestBuyTesti"> </include>
+                 </methods>
+             </class>
+
+        </classes>
+
+
+    </test>
+
+
+</suite>

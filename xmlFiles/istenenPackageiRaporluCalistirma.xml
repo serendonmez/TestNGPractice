@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Day05 package ini calistir.
+
+-->
+<suite name="raporlu test">
+    <test name="arama ve Login testi">
+        <packages>
+            
+            <package name="tests.day05_TestReporting"></package>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<!-- day2 C04
+day3 C02
+Self Learning package indan C01 calissin
+verilengörev biden fazla package tan farkli classlar old icin test altinda classes seciyoruz.
+classlari sectikten sonra right click ve run
+right clickte run yoksa ctrl+S yaptiktan sonra tekrar dene
+    -->
+
+ <suite name="istenen Classlari Calistirma Suiti">
+    <test name="A1">
+      <classes>
+          <class name="tests.day02_TestNGFrameworkHazirlama.C04_FormDoldurma"></class>
+          <class name="tests.day03_TestDatasiKullanimi.C02_NegativeLoginTest"></class>
+          <class name="SelfLearning.C01"></class>
+      </classes>
+
+    </test>
+
+
+
+
+
+</suite>

@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="istenen package i cross paralel calistirma" parallel="tests" thread-count="2">
+    <parameter name="kullanilacakBrowser" value="chrome"></parameter>
+    <test name="Chrome ile calistirilacak Classlar" >
+
+       <classes>
+           <class name="tests.day07_CrossBrowserTesting.C01_AramaTesti"></class>
+           <class name="tests.day07_CrossBrowserTesting.C02_PozitifLoginTesti"></class>
+           <class name="tests.day07_CrossBrowserTesting.C03_UrunSepetiTesti"></class>
+       </classes>
+
+
+    </test>
+
+
+    <test name="Firefox ile calistirilacak Classlar">
+        <parameter name="kullanilacakBrowser" value="firefox"></parameter>
+        <classes>
+            <class name="tests.day07_CrossBrowserTesting.C01_AramaTesti"></class>
+            <class name="tests.day07_CrossBrowserTesting.C02_PozitifLoginTesti"></class>
+            <class name="tests.day07_CrossBrowserTesting.C03_UrunSepetiTesti"></class>
+        </classes>
+
+
+
+    </test>
+</suite>

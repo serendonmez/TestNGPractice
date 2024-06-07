@@ -1,20 +1,18 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 import utilities.Driver;
+import utilities.DriverCross;
 
 import java.util.List;
 
-public class TestotomasyonuPage {
+public class TestotomasyonuPage1 {
+    static String kullanilacakBrowser;
 
-    public TestotomasyonuPage() {
-
-
-        PageFactory.initElements(Driver.getDriver(),this);
+    public TestotomasyonuPage1() {
+        PageFactory.initElements(DriverCross.getDriver(kullanilacakBrowser), this);
     }
 
     @FindBy(id = "global-search")
